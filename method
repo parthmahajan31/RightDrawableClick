@@ -1,0 +1,12 @@
+ view1.et_password.setOnTouchListener(View.OnTouchListener { v, event ->
+            if (event.action == MotionEvent.ACTION_UP) {
+                if (event.rawX >= view1.et_password.right - view1.et_password.compoundDrawables[2].bounds.width()
+                ) {
+
+                    //Write Your code here 
+
+                    return@OnTouchListener true
+                }
+            }
+            false
+        })
